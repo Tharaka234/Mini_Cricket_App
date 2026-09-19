@@ -90,7 +90,7 @@ class _CricketGameScreenState extends State<CricketGameScreen> {
               // 1. Green Line Widget (CustomPaint widget eka)
               Positioned.fill(
                 child: CustomPaint(
-                  // Api hadapu Painter class eka methana use karanawa
+
                   painter: UpwardLinePainter(
                     bottomY: bottomY,
                     dragY: gameState.dragY,
@@ -167,9 +167,7 @@ class _CricketGameScreenState extends State<CricketGameScreen> {
   }
 }
 
-// ==========================================
-// PAINTER CLASS EKA METHANA THIYENNE (Bottom of file)
-// ==========================================
+
 class UpwardLinePainter extends CustomPainter {
   final double bottomY;
   final double dragY;
